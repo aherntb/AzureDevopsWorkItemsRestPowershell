@@ -21,6 +21,15 @@ function Get-WorkItems
 	Invoke-RestMethod -Uri $url -Method Get -ContentType "application/json" -Headers $header
 }
 
+function Get-WorkItem
+{
+	Param([string]$org, [string]$project, [string]$PAT, [string]$workItemId)
+	$header = Create-Header $PAT
+	#GET https://{instance}/{collection}/{project}/_apis/wit/workitems/{id}?api-version=5.0
+	$url = $org + "/"+$project+"/_apis/wit/workitems/"+$workItemId+"?api-version=5.0"
+	Invoke-RestMethod -Uri $url -Method Get -ContentType "application/json" -Headers $header
+}
+
 function Update-WorkItemDescription
 {
 	#https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work%20items/update?view=azure-devops-server-rest-5.0
