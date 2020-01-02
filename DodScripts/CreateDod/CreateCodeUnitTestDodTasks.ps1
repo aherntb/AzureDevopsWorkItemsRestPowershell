@@ -26,9 +26,9 @@ function Create-CodeUnitTestDodTasks
 	$newTask = Create-TaskForWorkItem $orgUrl $project $personalToken $title $description $workItem.url
 	Write-HostWorkItem $newTask
 
-	#Code Review
-	$title = "[DOD Task]: Code Review"
-	$description = "Developer has reviewed the code for this feature with Trevor Schoen & received signoff"
-	$newTask = Create-TaskForWorkItem $orgUrl $project $personalToken $title $description $workItem.url
-	Write-HostWorkItem $newTask
+	##Code Review
+	#$title = "[DOD Task]: Code Review"
+	#$description = "Developer has reviewed the code for this feature with Trevor Schoen & received signoff"
+	#$newTask = Create-TaskForWorkItem $orgUrl $project $personalToken $title $description $workItem.url
+	#Write-HostWorkItem $newTask
 }
