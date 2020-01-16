@@ -12,9 +12,9 @@ $orgUrl = Get-OrgURL
 $project = Get-ProjectName 
 $personalToken = Get-PersonalAccessToken
 
-$automationPbiList = "587"
-$sqaPbiList = "587"
-$uatPbiList = ""
+$automationPbiList = ""
+$sqaPbiList = "61,67"
+$uatPbiList = "80,86"
 $codeUnitTestPbiList = ""
 
 
