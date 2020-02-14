@@ -2,7 +2,7 @@
 This project contains some sample functions that allows you to call the REST api via powershell.  
 Its meant as a quick start to get you going rather than a complete library.
 
-##CreateDodForWorkItems.ps1
+## CreateDodForWorkItems.ps1
 This powershell script is responsible for running specific powershell scripts for creating DOD tasks depending on the PBI type. There are four types of PBI: 
 (1) Automation Test PBI
 (2) SQA PBI
@@ -13,7 +13,7 @@ The user should provide the PBI number for the corresponding PBI types in the st
 The script can then be executed to create the DOD tasks on the Azure DevOps Board
 
 
-##PrivateData.ps1
+## PrivateData.ps1
 The powershell script for creating DOD tasks is dependent on PrivateData.ps1. This powershell script is not available on github as it contains sensitive data specific to each team
 
 
